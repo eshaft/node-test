@@ -7,7 +7,6 @@ http.createServer(function (req, res) {
         var file = 'phoenix5a.png';
         fs.stat(file, function (err, stat) {
             if (err) {
-                23
                 console.error(err);
                 res.writeHead(200, {'Content-Type': 'text/plain'});
                 res.end("Sorry, Burningbird isn't around right now \n");
